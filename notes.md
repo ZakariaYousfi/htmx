@@ -31,3 +31,9 @@ The HTML itself didn't offer anything close to the interactivity of modern javas
 
 # A mix of SPAs and MPA
 Multiple page applications is a term given for applications that uses hypermedia. figures in the developement community argue for mixing SPAs and MPAs. SPAs when we need interactivity and MPAs when we need it not. but it turns out, rather than having an SPA with a bit of hypermedia around the edges, you can often create a web application that is primarily or entirely hypermedia-driven, and that still statisfies the interactivity that users require. This approach incredibly simplifies the application and leads to a much less complex application. It is all about adopting a hypermedia-first approach.
+
+# HTMX
+HTMX is a hypermedia-oriented library. while HTMX and the old web 1.0 approaches intersect in their usage of hypermedia as their core technology and architecture, it's not quite right to call applications using HTMX as MPAs.
+
+# Hypermedia-driven applications (HDAs)
+A web application that uses hypermedia and hypermedia exchanges as its primary mechanism for communicating with a server.
