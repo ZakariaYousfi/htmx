@@ -37,3 +37,13 @@ HTMX is a hypermedia-oriented library. while HTMX and the old web 1.0 approaches
 
 # Hypermedia-driven applications (HDAs)
 A web application that uses hypermedia and hypermedia exchanges as its primary mechanism for communicating with a server.
+
+# An HTMX example
+the following is an HTMX code:
+< button hx-get="/contacts/1" hx-target="#contact-ui"> 
+                                                Fetch Contact 
+    < button />
+it translates to: when this button is clicked, make a get request to /contacts/1 and if a response is sent back, replace the HTML element that has the id contact-ui with the HTML in the response. So, the reponse returned is not a JSON response like with other frameworks, but an HTML response. The button from the code earlier is exchanging hypermedia with the server, just like the anchor and form tag. HTMX added functionality to this button, so it is extending HTML as a hypermedia. In the previous code, the javascript usage wasn't explicit, but HTMX  uses javascript under the hood to extend HTML. 
+
+# Last words on using HTMX vs reactive solutions
+if there is a lot of interactivity in a website, let's say a spreadsheet application, then HTMX might not be the perfect fit, because updating a single cell can incude a lot of changes in the sheet. whoever, if the spreadsheet application has a settings page, that would have a lot of interactivity and thus, using HTMX there would be fitting. If the page is a product page, then HTMX is fitting because most of the content is text and images, and there is no need for a lot of interactivity. It's all about the amount of interactivity versus the staticness of the page. So, it's better to use HTMX whenever it fits. A hybrid approach is always best. Why complicate things when a simple approach can do?
