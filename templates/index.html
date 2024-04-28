@@ -1,7 +1,7 @@
 
-{ % extends 'layout.html' }
+{% extends 'layout.html' %}
 
-{ % block content % }
+{% block content %}
 
 <form action="/contacts" method="get" class="tool-bar">
     <label for="search">Search Term</label>
@@ -30,7 +30,7 @@
             <a href="/contacts/{{ contact.id
             }}">View</a></td>
         </tr>
-        { % endfor % }
+        {% endfor %}
     </tbody>
 </table>
 
@@ -38,4 +38,4 @@
     <a href="/contacts/new">Add Contact</a>
 </p>
 
-{ % endblock % }
+{% endblock %}
